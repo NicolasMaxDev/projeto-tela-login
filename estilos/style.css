@@ -30,7 +30,6 @@ main {
     background-color: white;
     width: 270px;
     height: auto;
-    
     border-radius: 20px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.466) 0px 0px 10px;
@@ -142,3 +141,37 @@ form > .botao > span {
     transform: translateY(2px);
 }
 
+.redes > button {
+    background-color: rgb(144, 121, 199);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.redes > button > a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transform: translateY(-10px);
+}
+
+.redes > button:hover {
+    text-decoration: none;
+    color: white;
+    transform: translateY(-3px) scale(1.02);
+    transition-duration: .3s;
+    background-color: rgb(96, 49, 207);
+}
+
+.redes > button > img {
+    background-color: white;
+    border: solid white;
+    border-radius: 100%;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    vertical-align: middle; 
+    margin-right: 6px;
+}
