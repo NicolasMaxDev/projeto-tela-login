@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* mobile first */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-image: url(../imagens/foto-tela.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 270px;
+    height: auto;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.466) 0px 0px 10px;
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
+}
+
+#login > #imagem {
+    display: block;
+    background: rgb(93, 70, 218) url(../imagens/foto-lado-login.png);
+    background-size: cover;
+    height: 200px;
+}
+
+#login > #formulario {
+    display: block;
+    padding: 10px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario > p {
+    font-size: 0.8em;
+}
+
+form > .campo {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(96, 49, 207);
+    height: 40px;
+    margin: 10px 0px;
+}
+
+form > div.campo > label {
+    display: none;
+}
+
+form > .campo > span {
+    color: white;
+    margin-left: 5px;
+    font-size: 1.6em;
+    transform: translateY(7px);
+}
+
+div.campo > input {
+    font-size: 1em;
+    background-color: rgb(108, 66, 206);
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    width: calc(100% - 39px);
+    transform: translateY(1.4px);
+}
+
+div.campo > input::placeholder {
+    color: rgba(255, 255, 255, 0.473);
+}
+
+input:not(:placeholder-shown) {
+    color: white;
+}
+
+div.campo > input:focus-within {
+    background-color:  rgb(108, 66, 206);
+    border: none;
+    outline: none;
+}
+
+form > input[type=submit] {
+    display:block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(144, 121, 199);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+form > input[type=submit]:hover {
+    background-color: rgb(96, 49, 207);
+    transition-duration: .4s;
+    color: white;
+    transform: translateY(-3px) scale(1.02);
+}
+
+form > a.botao {
+    display: block;
+    text-align: right;
+    font-size: 1em;
+    margin-top: 8px;
+    text-decoration: none;
+    width: 100%;
+    color: rgb(87, 8, 161);
+}
+
+form > a.botao:hover {
+    color: rgb(166, 94, 214);
+    transition-duration: .3s;
+}
+
+form > .botao > span {
+    font-size: 0.9em;
+    transform: translateY(2px);
+}
+
